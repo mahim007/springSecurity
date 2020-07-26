@@ -58,7 +58,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .username("nitol")
                 .password(passwordEncoder.encode("admin"))
                 //.roles(ADMIN.name())
-                .authorities(ADMIN.getGrantedAuthorities())
+                .authorities(ADMIN.getGrantedAuthorities())// a comment has been added
                 .build();
 
         UserDetails ornob = User.builder()
